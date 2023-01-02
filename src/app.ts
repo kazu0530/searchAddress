@@ -22,7 +22,7 @@ function searchAddressHandler(event: Event) {
         enteredAddress
       )}&key=${GOOGLE_API_KEY}`
     )
-    .then((response) => {
+    .then((response: any) => {
       if (response.data.status !== "OK") {
         throw new Error("座標を取得できませんでした。");
       }
@@ -36,7 +36,7 @@ function searchAddressHandler(event: Event) {
         map: map,
       });
     })
-    .catch((err) => {
+    .catch((err: any) => {
       alert(err.message);
       console.log(err);
     });
