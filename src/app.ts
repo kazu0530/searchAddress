@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../node_modules/axios/index";
 
 const form = document.querySelector("form")!;
 const addressInput = document.getElementById("address")! as HTMLInputElement;
