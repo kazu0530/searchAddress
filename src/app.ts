@@ -3,7 +3,7 @@ import axios from "../node_modules/axios/index";
 const form = document.querySelector("form")!;
 const addressInput = document.getElementById("address")! as HTMLInputElement;
 
-const GOOGLE_API_KEY = "AIzaSyBWm8fHiZzjJAdAS8IS0vFwizj7FbywGsg";
+const GOOGLE_API_KEY = "";
 
 type GoogleGeocodingResponse = {
   results: { geometry: { location: { lat: number; lng: number } } }[];
